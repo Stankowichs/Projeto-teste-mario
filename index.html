@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Import the font -->
+
     <title>Mariojump</title>
 </head>
 <body>  
 
     <div class="game-board">
-    <img src="imagens/clouds.png" class="clouds">
-    <img src="imagens/pipe.png" class="pipe">
-    <img src="imagens/mario.gif" class="mario">
-    <audio src="sons/smb_mariodie.wav" id="morte"></audio>
-    <audio src="sons/smb2_jump.wav" id="pulo"></audio>
-    <audio src="sons/main-theme-overworld.wav" id="track"></audio>
-    
+        <img src="imagens/clouds.png" class="clouds">
+        <img src="imagens/pipe.png" class="pipe">
+        <img src="imagens/mario.gif" class="mario">
+        <audio src="sons/smb_mariodie.wav" id="morte"></audio>
+        <audio src="sons/smb2_jump.wav" id="pulo"></audio>
+        <audio src="sons/main-theme-overworld.wav" id="track"></audio>
     </div>
-    
+
+    <div id="counter" class="score">0</div> <!-- Counter display -->
+    <div id="game-over" class="game-over">Game Over</div> <!-- Game Over message -->
+
     <script src="input.js"></script>
 
 </body>

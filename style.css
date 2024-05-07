@@ -18,8 +18,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear
-    
+    animation: pipe-animation 1.5s infinite linear    
 }
 
 .mario{
@@ -38,6 +37,37 @@
     animation: clouds-animation 15s infinite linear;
 }
 
+.score {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive; 
+    font-weight: bold; 
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center; 
+}
+
+.game-over {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive; /* Change the font family */
+    font-weight: bold; /* Make the font bold */
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center; /* Center the text */
+    display: none; /* Hide the element initially */
+}
+
 @keyframes pipe-animation {
     from{
         right: -80px;
@@ -46,7 +76,6 @@
     to{
         right: 100%;
     }
-
 }
 
 @keyframes jump {
